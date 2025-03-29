@@ -1,0 +1,113 @@
+login.css
+/* General styling */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Left section (yellow) */
+.left-section {
+    background-color: #ffcb05;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 0px; 
+    border-bottom-right-radius: 0px; 
+    position: relative; 
+}
+
+/* Logo styling */
+.logo {
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    left: 30px; 
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 50px; 
+    align-items: center;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black; 
+    border-radius: 25px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    text-align: center; 
+    background-color: rgb(255, 255, 255);
+}
+
+/* Button container for horizontal alignment */
+.button-container {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 10px;
+    width: 100%; 
+}
+
+button {
+    flex: 1; 
+    margin: 0 5px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Google icon styling */
+.google-icon {
+    width: 60px; 
+    height: 60px;
+    background-color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    border: 3px solid rgb(255, 255, 255); 
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px; 
+}
+
+.google-icon img {
+    width: 80%; 
+    height: auto;
+}
+
+.google-icon:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Right section (background image) */
+.right-section {
+    width: 70%;
+    background: url("campus.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
